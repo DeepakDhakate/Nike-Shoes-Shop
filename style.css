@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+
+
+
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	text-decoration: none;
+}
+html{
+	scroll-behavior: smooth;
+}
+.max-width{
+	max-width: 1300px;
+	padding: 0 80px;
+	margin: auto;
+}
+.navbar{
+	position: fixed;
+	width: 100%;
+	z-index: 999;
+	padding: 15px 0; 
+	background: rgb(238, 238, 238);
+	font-family: sans-serif;
+	transition: all 0.3s ease;
+    color: ;
+}
+.navbar.sticky{
+	padding: 15px 0; 
+	background: rgb(100, 97, 98);
+}
+.navbar .max-width{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.navbar .logo a{
+	color: rgb(0, 0, 0);
+	font-size: 30px;
+    margin-left: 90px;
+	font-weight: 600
+}
+.navbar .menu li{
+	list-style: none;
+	display: inline-block; 
+}
+.navbar .menu li a{
+    color: #000;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 25px;
+   transition: color 0.5s ease;
+}
+.navbar .menu li a:hover{
+    color: rgb(255, 122, 21);
+    border-bottom: 2px solid lightseagreen;
+    border-top: 2px solid lightseagreen;
+    padding: 10px;
+    
+}
+.navbar.sticky .menu li a:hover{
+	color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+.about{
+	display: flex;
+    background-size: cover;
+    width: 100%;
+    background: rgb(241, 241, 241);
+	color: rgb(0, 0, 0);
+	height: 100vh; 
+	font-family: sans-serif;
+}
+.about .title::after{
+	content: "Sneakers";
+}
+.about .about-content .left{
+	width: 40%;
+}
+.about .about-content .left img{
+	height: 350px;
+	width: 350px;
+	object-fit: cover;
+	border-radius: 6px;
+}
+.about .about-content .right{
+	width: 60%;
+}
+.about .about-content .right .text{
+	font-size: 25px;
+	font-weight: 600;
+	margin-bottom: 10px;
+}
+.about .about-content .right .text{
+	color: crimson;
+}
+.about .about-content .right p{
+	text-align: justify;
+}
+.about .about-content .right a{
+	display: inline-block;
+	background: rgb(255, 255, 255);
+	color: rgb(245, 245, 245);
+	font-size: 20px;
+	font-weight: 500;
+	padding: 10px 30px;
+	margin-top: 20px;
+	border-radius: 6px;
+	border: 2px solid #111;
+	transition: all 0.3s ease;
+}
+.about .about-content .right a:hover{
+	color: rgb(255, 122, 21);
+	background: none;
+    border: 1px solid rgb(255, 122, 21);;
+   
+}
+
+
+
+
+
+
+/*-- ALL SIMILAR CONTENT STYLING CODE--*/
+section{
+	padding: 100px 0;
+}
+.about, .services, .skills, .teams, .contact, footer{
+	font-family: 'Poppins', sans-serif;
+}
+.about .about-content,
+.services .services-content,
+.skills .skills-content,
+.contact .contact-content{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+}
+section .title{
+	position: relative;
+	text-align: center;
+	font-size: 40px;
+	font-weight: 500;
+	margin-bottom: 60px;
+	padding-bottom: 20px;
+	font-family: 'Ubuntu', sans-serif;
+}
+section .title::before{
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	width: 180px;
+	height: 3px;
+	background: lightseagreen;
+	transform: translateX(-50%);
+}
+section .title::after{
+	content: "who i am";
+	position: absolute;
+	bottom: -12px;
+	left: 50%;
+	font-size: 20px;
+	color: rgb(255, 122, 21);
+	padding: 5px;
+	background: rgb(243, 243, 243);
+	transform: translateX(-50%);
+}
+
+
+.colors{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-column-gap: 1em;
+    float: left;
+    margin-left: 0px;
+    margin-top: 50px;
+}
+.dots{
+    position: relative;
+    margin-top: em;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.dots::after {
+    position: absolute;
+    content: "";
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    border: 1px solid gray;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.red{
+    background-color: red;
+}
+.black{
+    background-color: black;
+}
+.blue{
+    background-color: blue;
+}
+.green{
+    background-color: green;
+}
+.gray{
+    background-color: rgb(165, 165, 165);
+}
+.orange{
+    background-color: orangered;
+}
